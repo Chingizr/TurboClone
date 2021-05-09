@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+    private String test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +20,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.FrameLayoutFragment, homeFragment);
         ft.commit();
+
+
     }
 }
