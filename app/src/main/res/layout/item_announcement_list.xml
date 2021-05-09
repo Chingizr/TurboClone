@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="8dp"
+        card:cardElevation="4dp"
+        card:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewCarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSalon"
+            android:background="@drawable/shape_info_salon_background"
+            android:text="Salon"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCarImage"
+            app:layout_constraintStart_toStartOf="@+id/imageViewCarImage"
+            style="@style/TextView.CardSalon"/>
+
+        <ImageView
+            android:background="@drawable/shape_info_vip_background"
+            android:src="@drawable/ic_vip"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCarImage"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewCarImage"
+            style="@style/ImageView.CardInfoVip"/>
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="@+id/imageViewCarImage"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCarImage"
+            style="@style/LinearLayout.CardInfoProduct">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:background="@drawable/shape_circle_loan_bg"
+                android:src="@drawable/ic_percent"
+                style="@style/ImageView.ImagePercent"/>
+
+            <ImageView
+                android:background="@drawable/shape_circle_barter_bg"
+                android:src="@drawable/ic_baseline_loop_24"
+                style="@style/ImageView.ImageCircleBarter"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewFavorite"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewCarImage"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCarImage"
+            style="@style/ImageView.Favorite"/>
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:text="23 900 AZN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCarImage"
+            style="@style/TextView.CardPrice"/>
+
+        <TextView
+            android:id="@+id/textViewModel"
+            android:text="Nissan Sunny"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPrice"
+            style="@style/TextView.CardModel"/>
+
+        <TextView
+            android:id="@+id/textViewInformation"
+            android:text="2020, 1.6l, 0km"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewModel"
+            style="@style/TextView.CardInformation"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:text="Bakı bugün, 10:28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInformation"
+            style="@style/TextView.CardDate"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

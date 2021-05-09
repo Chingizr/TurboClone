@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        style="@style/LinearLayout.Body">
+
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/LinearLayout.Header">
+
+            <TextView
+                android:text="@string/logo"
+                style="@style/TextView.Logo"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBrand"
+                android:weightSum="10"
+                android:background="@drawable/shape_top_left_right_border"
+                style="@style/LinearLayout">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_menu_24"
+                    style="@style/ImageView.Icons"/>
+
+                <TextView
+                    android:layout_weight="8"
+                    android:text="@string/all_brands"
+                    style="@style/TextView.Options"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                    style="@style/ImageView.Icons"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewLine"
+                style="@style/View"/>
+
+            <LinearLayout
+                android:weightSum="10"
+                style="@style/LinearLayout">
+
+                <LinearLayout
+                    android:layout_weight="8"
+                    android:weightSum="10"
+                    android:background="@drawable/shape_bottom_left_border"
+                    style="@style/LinearLayout.Options">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        tools:ignore="NestedWeights"
+                        style="@style/ImageView.Icons" />
+
+                    <TextView
+                        android:text="@string/all_city"
+                        android:layout_weight="9"
+                        style="@style/TextView.Options"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lineLayoutFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:background="@drawable/shape_button_right_border">
+
+                    <ImageView
+                        android:src="@drawable/ic_baseline_tune_24"
+                        style="@style/ImageView.Icons" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/LinearLayout">
+
+            <LinearLayout
+                android:orientation="vertical"
+                style="@style/LinearLayout.Title">
+
+                <View
+                    style="@style/View"/>
+
+                <TextView
+                    android:text="@string/vip_announcement"
+                    style="@style/TextView.Title"/>
+
+                <View
+                    style="@style/View"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewVipAnnouncement"
+                style="@style/RecyclerView"/>
+
+            <View
+                style="@style/View"/>
+
+            <LinearLayout
+                android:weightSum="10"
+                style="@style/LinearLayout.Title">
+
+                <TextView
+                    android:layout_weight="5"
+                    android:text="@string/last_announcement"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="5"
+                    android:text="@string/show_all"
+                    style="@style/TextView.Link"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/View"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewLastAnnouncement"
+                style="@style/RecyclerView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

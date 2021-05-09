@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TurboClone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_all"><u>Hamısını göstər</u></string>
+    <string name="logo">TURBO.AZ</string>
+    <string name="all_brands">Bütün Markalar</string>
+    <string name="all_city">Bütün Şəhərlər</string>
+    <string name="vip_announcement">vip elanlar</string>
+    <string name="last_announcement">son elanlar</string>
+</resources>
